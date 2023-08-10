@@ -95,3 +95,7 @@ ssh user@localhost
 ssh -X username@localhost
 scp work.zip username@localhost:~/
 ```
+
+```bash
+-r vendor.zip vendor -x "*.DS_Store" "*__MACOSX*"
+```
