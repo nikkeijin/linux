@@ -99,3 +99,7 @@ scp work.zip username@localhost:~/
 ```bash
 -r vendor.zip vendor -x "*.DS_Store" "*__MACOSX*"
 ```
+
+```bash
+ssh -i /Users/david/Downloads/keyfromserver.key username@example.com -p 10022
+```
