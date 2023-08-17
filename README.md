@@ -101,5 +101,6 @@ scp work.zip username@localhost:~/
 ```
 
 ```bash
+chmod 600 /Users/david/Downloads/keyfromserver.key
 ssh -i /Users/david/Downloads/keyfromserver.key username@example.com -p 10022
 ```
