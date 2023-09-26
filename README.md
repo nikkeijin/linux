@@ -107,4 +107,6 @@ ssh -i /Users/david/Downloads/keyfromserver.key username@example.com -p 10022
     
 ```bash
 rm -rf /path/to/directory
+
+※ This will erase the directory and all files in.
 ```
