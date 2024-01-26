@@ -1,4 +1,4 @@
-## Useful Commands
+## Common Commands
 
 ```bash
 ps
