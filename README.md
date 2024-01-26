@@ -152,7 +152,7 @@ This command will search for the pattern "example" within the content of the gzi
 
 ## Regular Expression
 
-Certainly! Here are some examples of using `grep` and `find` with regular expressions:
+Here are some examples of using `grep` and `find` with regular expressions:
 
 ### Using `grep` with Regular Expression:
 
