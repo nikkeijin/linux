@@ -149,3 +149,68 @@ zgrep "example" file.txt.gz
 ```
 
 This command will search for the pattern "example" within the content of the gzip-compressed file `file.txt.gz` without the need to manually decompress it.
+
+## Regular Expression
+
+Certainly! Here are some examples of using `grep` and `find` with regular expressions:
+
+### Using `grep` with Regular Expression:
+
+1. **Search for a word in a file:**
+   ```bash
+   grep "pattern" filename.txt
+   ```
+
+2. **Case-insensitive search:**
+   ```bash
+   grep -i "pattern" filename.txt
+   ```
+
+3. **Search for lines starting with a specific word:**
+   ```bash
+   grep "^startword" filename.txt
+   ```
+
+4. **Search for lines ending with a specific word:**
+   ```bash
+   grep "endword$" filename.txt
+   ```
+
+5. **Search for lines containing either of two words:**
+   ```bash
+   grep "word1\|word2" filename.txt
+   ```
+
+6. **Search for lines NOT containing a word:**
+   ```bash
+   grep -v "exclude" filename.txt
+   ```
+
+### Using `find` with Regular Expression:
+
+1. **Find files matching a pattern in the current directory:**
+   ```bash
+   find . -type f -name "pattern*"
+   ```
+
+2. **Find directories matching a pattern in a specific path:**
+   ```bash
+   find /path/to/search -type d -name "pattern*"
+   ```
+
+3. **Find files modified within the last 7 days:**
+   ```bash
+   find . -type f -mtime -7
+   ```
+
+4. **Find files with a specific extension:**
+   ```bash
+   find . -type f -name "*.txt"
+   ```
+
+5. **Find files with a size greater than 1GB:**
+   ```bash
+   find . -type f -size +1G
+   ```
+
+These examples showcase how regular expressions can be used with `grep` to search for patterns within file content and with `find` to locate files and directories based on various criteria. Adjust the patterns and criteria based on your specific needs.
