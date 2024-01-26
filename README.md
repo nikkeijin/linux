@@ -1,4 +1,4 @@
-# Useful Commands
+## Useful Commands
 
 ```bash
 ps
@@ -110,3 +110,25 @@ rm -rf /path/to/directory
 
 ※ This will erase the directory and all files in.
 ```
+
+
+## Research Commands
+
+```bash
+grep
+find
+```
+
+`grep` and `find` are both command-line utilities in Unix-like operating systems, but they serve different purposes and are used in different contexts.
+
+1. **`grep`**:
+   - Purpose: `grep` stands for "global regular expression print." It is used to search for specific patterns (regular expressions) within files or the output of other commands.
+   - Syntax: `grep [options] pattern [file(s)]`
+   - Example: `grep "example" file.txt` will search for the pattern "example" in the content of the file.txt.
+
+2. **`find`**:
+   - Purpose: `find` is used to search for files and directories in a directory hierarchy based on various criteria such as file name, size, permissions, etc.
+   - Syntax: `find [path] [options] [expression]`
+   - Example: `find /path/to/search -name "*.txt"` will find all files with the ".txt" extension in the specified directory and its subdirectories.
+
+In summary, `grep` is primarily used for searching within the content of files or command output, focusing on patterns, while `find` is used for searching and locating files and directories based on various criteria within a directory hierarchy.
