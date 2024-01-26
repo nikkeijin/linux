@@ -116,6 +116,9 @@ rm -rf /path/to/directory
 
 ```bash
 grep
+```
+
+```bash
 find
 ```
 
@@ -132,3 +135,17 @@ find
    - Example: `find /path/to/search -name "*.txt"` will find all files with the ".txt" extension in the specified directory and its subdirectories.
 
 In summary, `grep` is primarily used for searching within the content of files or command output, focusing on patterns, while `find` is used for searching and locating files and directories based on various criteria within a directory hierarchy.
+
+```
+zgrep
+```
+
+`zgrep` is a variant of the `grep` command specifically designed to work with compressed files, typically files compressed using gzip. The primary difference between `grep` and `zgrep` is that `zgrep` can automatically decompress gzip-compressed files before searching, saving you the step of manually decompressing the file before using `grep`.
+
+Example of using `zgrep`:
+
+```bash
+zgrep "example" file.txt.gz
+```
+
+This command will search for the pattern "example" within the content of the gzip-compressed file `file.txt.gz` without the need to manually decompress it.
